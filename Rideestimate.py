@@ -6,13 +6,13 @@ rates={
 }
 
 # Function defenition
-def calculate_fare(km,type,hour):
+def calculate_fare(km,vehicle_type,hour):
     # Error handling
-    if type not in rates: 
-        print("Service Not Available");
+    if vehicle_type not in rates: 
+        print("Service Not Available")
         return None
     
-    rate=rates[type]
+    rate=rates[vehicle_type]
     price=km*rate
     surge = False
     # Surge logic
@@ -22,16 +22,16 @@ def calculate_fare(km,type,hour):
     return price,surge
     
 km=int(input("Enter the Number of Kilometers: "))
-type=input("Enter the type of the vehicle(Economy/Premium/SUV): ")
+vehicle_type=input("Enter the type of the vehicle(Economy/Premium/SUV): ")
 hour=int(input("Enter the Hour of Day(0-23): "))
 
-res=calculate_fare(km,type,hour)
+res=calculate_fare(km,vehicle_type,hour)
 if res:
     price,surge=res
 
     print("----- CityCab Ride Estimate Price Receipt -----")
     print("Distance:",km, "km")
-    print("Vehicle:",type)
+    print("Vehicle:",vehicle_type)
     print("Hour:",hour)
     if surge:
         print("Surge: Yes")
