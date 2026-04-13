@@ -26,16 +26,16 @@ insert into Books values (1,'Java Programming','James gosling','Programming'),
 
 select * from Books;
 
-insert into Students values (11,'Purna Latha','CSM','2026-03-21'),
-(12,'Bhanu Priya','ECE','2026-01-12'),
-(13,'Sahana','CSE','2025-03-07'),
-(14,'Harsha Vardhan','EEE','2022-06-21'),
-(15,'Renuka','CSE','2021-01-01'),
-(16,'Ananya Singh','MECH','2023-04-17'),
-(17,'Arjun Rao','ECE','2024-05-01'),
-(18,'Sneha Gupta','CSE','2026-03-04'),
-(19,'Deepika Pande','ECE','2025-06-25'),
-(20,'Nirmitha Reddy','EEE','2026-02-26');
+insert into Students values (11,'Purna Latha','2026-03-21'),
+(12,'Bhanu Priya','2026-01-12'),
+(13,'Sahana','2025-03-07'),
+(14,'Harsha Vardhan','2022-06-21'),
+(15,'Renuka','2021-01-01'),
+(16,'Ananya Singh','2023-04-17'),
+(17,'Arjun Rao','2024-05-01'),
+(18,'Sneha Gupta','2026-03-04'),
+(19,'Deepika Pande','2025-06-25'),
+(20,'Nirmitha Reddy','2026-02-26');
 
 select * from Students;
 
